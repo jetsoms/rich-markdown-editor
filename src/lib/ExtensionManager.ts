@@ -1,9 +1,6 @@
 import { Schema } from "prosemirror-model";
 import { keymap } from "prosemirror-keymap";
-import {
-  MarkdownParser,
-  MarkdownSerializer as PMarkdownSerializer,
-} from "prosemirror-markdown";
+import { MarkdownParser } from "prosemirror-markdown";
 import { MarkdownSerializer } from "./markdown/serializer";
 import Editor from "../";
 import Extension from "./Extension";
@@ -58,7 +55,7 @@ export default class ExtensionManager {
         {}
       );
 
-    return new MarkdownSerializer(nodes, marks) as PMarkdownSerializer;
+    return new MarkdownSerializer(nodes, marks);
   }
 
   parser({

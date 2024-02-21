@@ -58,10 +58,7 @@ type State = {
   selectedIndex: number;
 };
 
-class CommandMenu<T extends MenuItem = MenuItem> extends React.Component<
-  Props<T>,
-  State
-> {
+class CommandMenu<T = MenuItem> extends React.Component<Props<T>, State> {
   menuRef = React.createRef<HTMLDivElement>();
   inputRef = React.createRef<HTMLInputElement>();
 
@@ -276,10 +273,6 @@ class CommandMenu<T extends MenuItem = MenuItem> extends React.Component<
 
     this.clearSearch();
 
-    if (!uploadImage) {
-      throw new Error("uploadImage prop is required to replace images");
-    }
-
     if (parent) {
       insertFiles(view, event, parent.pos, files, {
         uploadImage,
@@ -305,7 +298,6 @@ class CommandMenu<T extends MenuItem = MenuItem> extends React.Component<
     this.clearSearch();
 
     const command = this.props.commands[item.name];
-
     if (command) {
       command(item.attrs);
     } else {

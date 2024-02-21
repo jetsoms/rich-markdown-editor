@@ -9,7 +9,6 @@
     "resolveJsonModule": true,
     "module": "commonjs",
     "target": "es2017",
-    "lib": ["dom", "es2018"],
     "jsx": "react",
     "types": [
       "react",
@@ -17,7 +16,6 @@
     ],
     "rootDir": "src",
     "outDir": "dist",
-    "skipLibCheck": true,
     "stripInternal": true,
     "removeComments": true,
     "declarationMap": true,

@@ -59,12 +59,6 @@ export const StyledEditor = styled("div")<{
     }
   }
 
-  .image-replacement-uploading {
-    img {
-      opacity: 0.5;
-    }
-  }
-
   .image-right-50 {
     float: right;
     width: 50%;
@@ -139,8 +133,6 @@ export const StyledEditor = styled("div")<{
       font-size: 13px;
       line-height: 0;
       margin-${props => (props.rtl ? "right" : "left")}: -24px;
-      transition: opacity 150ms ease-in-out;
-      opacity: 0;
       width: 24px;
     }
 
@@ -195,19 +187,6 @@ export const StyledEditor = styled("div")<{
   }
   h6:not(.placeholder):before {
     content: "H6";
-  }
-
-  .ProseMirror-focused {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      &:not(.placeholder):before {
-        opacity: 1;
-      }
-    }
   }
 
   .with-emoji {
@@ -360,7 +339,7 @@ export const StyledEditor = styled("div")<{
   blockquote {
     margin: 0;
     padding-left: 1.5em;
-    font-style: normal;
+    font-style: italic;
     overflow: hidden;
     position: relative;
 
@@ -416,6 +395,11 @@ export const StyledEditor = styled("div")<{
   ol {
     margin: ${props => (props.rtl ? "0 -26px 0 0.1em" : "0 0.1em 0 -26px")};
     padding: ${props => (props.rtl ? "0 44px 0 0" : "0 0 0 44px")};
+
+    ul,
+    ol {
+      margin-${props => (props.rtl ? "left" : "right")}: -24px;
+    }
   }
 
   ol ol {
@@ -538,10 +522,9 @@ export const StyledEditor = styled("div")<{
   code {
     border-radius: 4px;
     border: 1px solid ${props => props.theme.codeBorder};
-    background: ${props => props.theme.codeBackground};
     padding: 3px 4px;
     font-family: ${props => props.theme.fontFamilyMono};
-    font-size: 80%;
+    font-size: 85%;
   }
 
   mark {
@@ -554,36 +537,6 @@ export const StyledEditor = styled("div")<{
     }
   }
 
-  .code-block-wrapper {
-    .for-${props => (props.readOnly ? "readwrite" : "readonly")} {
-      display: none !important;
-    }
-    .code-block-toolbar {
-      display: flex;
-      flex-direction: row;
-      
-      > * {
-        border: none;
-        background: ${props => props.theme.codeBackground};
-        color: ${props => props.theme.code};
-        padding: 0.75em 1em;
-        border: 1px solid ${props => props.theme.codeBorder};
-      }
-      
-      
-      >:first-child {
-        border-top-left-radius: 4px;
-      }
-      >:last-child {
-        border-top-right-radius: 4px;
-      }
-    }
-    pre {
-      border-top-left-radius: 0;
-      margin-top: 0;
-    }
-  }
-  
   .code-block,
   .notice-block {
     position: relative;
@@ -787,7 +740,6 @@ export const StyledEditor = styled("div")<{
 
     th {
       background: ${props => props.theme.tableHeaderBackground};
-      font-weight: normal;
     }
 
     td,

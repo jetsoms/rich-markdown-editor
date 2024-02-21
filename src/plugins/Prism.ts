@@ -112,7 +112,7 @@ export default function Prism({ name }) {
   return new Plugin({
     key: new PluginKey("prism"),
     state: {
-      init: (_, { doc }) => {
+      init: (_: Plugin, { doc }) => {
         return DecorationSet.create(doc, []);
       },
       apply: (transaction: Transaction, decorationSet, oldState, state) => {
@@ -144,7 +144,7 @@ export default function Prism({ name }) {
     },
     props: {
       decorations(state) {
-        return (this as any).getState(state); // NOTE(tecc): this is a hack
+        return this.getState(state);
       },
     },
   });
