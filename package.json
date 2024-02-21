@@ -120,7 +120,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/notea-org/rich-markdown-editor.git"
+    "url": "git+https://github.com/jetsoms/rich-markdown-editor.git"
   },
   "keywords": [
     "editor",
@@ -128,9 +128,9 @@
     "text",
     "wysiwyg"
   ],
-  "author": "Tom Moor <tom.moor@gmail.com>",
+  "author": "Jetsoms Ltd <support@jetsoms.co.uk>",
   "bugs": {
-    "url": "https://github.com/notea-org/rich-markdown-editor/issues"
+    "url": "https://github.com/jetsoms/rich-markdown-editor/issues"
   },
-  "homepage": "https://github.com/notea-org/rich-markdown-editor#readme"
+  "homepage": "https://github.com/jetsoms/rich-markdown-editor#readme"
 }
