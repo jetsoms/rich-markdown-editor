@@ -1,23 +1,23 @@
 # rich-markdown-editor
 
-A React and [Prosemirror](https://prosemirror.net/) based editor that can also be used for displaying content in a read-only fashion.
+A React and [Prosemirror](https://prosemirror.net/) based editor that powers Jetsoms [Notes app](#) and can also be used for displaying content in a read-only fashion.
 
 The editor is WYSIWYG and includes formatting tools whilst retaining the ability to write markdown shortcuts inline and output plain Markdown.
 
-> Important Note: This project is **not attempting to be an all-purpose Markdown editor**. We welcome adaptations and forms, as well as improvements. This project is an adaptation of the original Outline archived repository and used / adapted for our own internal purposes.
+> Important Note: This project is **not attempting to be an all-purpose Markdown editor**. It is built from a archived Outline repository, and whilst others are welcome to fork or use this package in your own products, development decisions are centered around the needs of our business needs.
 
 ## Usage
 
 ### Install
 
 ```bash
-yarn add rich-markdown-editor
+yarn add @jetsoms/rich-markdown-editor
 ```
 
 or
 
 ```bash
-npm install rich-markdown-editor
+npm install @jetsoms/rich-markdown-editor
 ```
 
 Note that `react`, `react-dom`, and `styled-components` are _required_ peer dependencies.
@@ -25,15 +25,12 @@ Note that `react`, `react-dom`, and `styled-components` are _required_ peer depe
 ### Import
 
 ```javascript
-import Editor from "rich-markdown-editor";
+import Editor from "@jetsoms/rich-markdown-editor";
 
 <Editor
   defaultValue="Hello world!"
 />
 ```
-
-Clone this repo and run the Storybook with `yarn start` to see a wide variety of example usage.
-
 
 ### Props
 
