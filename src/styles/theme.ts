@@ -54,7 +54,7 @@ export const base = {
   blockToolbarTextSelected: colors.black,
   blockToolbarSelectedBackground: colors.greyMid,
   blockToolbarHoverBackground: colors.greyLight,
-  blockToolbarDivider: colors.greyMid,
+  blockToolbarDivider: "#6222CC", // colors.greyMid
 
   noticeInfoBackground: "#6222CC", // was 'F5BE31
   noticeInfoText: colors.white, // was colors.almostBlack
