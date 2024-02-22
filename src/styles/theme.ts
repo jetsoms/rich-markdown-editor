@@ -56,8 +56,8 @@ export const base = {
   blockToolbarHoverBackground: colors.greyLight,
   blockToolbarDivider: colors.greyMid,
 
-  noticeInfoBackground: "#F5BE31",
-  noticeInfoText: colors.almostBlack,
+  noticeInfoBackground: "#6222CC", // was 'F5BE31
+  noticeInfoText: colors.white, // was colors.almostBlack
   noticeTipBackground: "#9E5CF7",
   noticeTipText: colors.white,
   noticeWarningBackground: "#FF5C80",
@@ -70,7 +70,7 @@ export const light = {
   text: colors.almostBlack,
   code: colors.lightBlack,
   cursor: colors.black,
-  divider: colors.greyMid,
+  divider: "#6222cc", // wascolors.greyMid,
 
   toolbarBackground: colors.lightBlack,
   toolbarHoverBackground: colors.black,
@@ -97,7 +97,7 @@ export const dark = {
   text: colors.almostWhite,
   code: colors.almostWhite,
   cursor: colors.white,
-  divider: "#4E5C6E",
+  divider: "#4E5C6E", 
   placeholder: "#52657A",
 
   toolbarBackground: colors.white,
