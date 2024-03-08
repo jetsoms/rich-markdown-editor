@@ -25,7 +25,7 @@ export const base = {
   placeholder: "#B1BECC",
   textSecondary: "#4E5C6E",
   textLight: colors.white,
-  textHighlight: "#b3e7ff",
+  textHighlight: "#D8D2E7", // was #b3e7ff
   textHighlightForeground: colors.black,
   selected: colors.primary,
   codeComment: "#6a737d",
@@ -58,7 +58,7 @@ export const base = {
 
   noticeInfoBackground: "#6222CC", // was 'F5BE31
   noticeInfoText: colors.white, // was colors.almostBlack
-  noticeTipBackground: "#9E5CF7",
+  noticeTipBackground: "#9E5CF7", // was #9E5CF7
   noticeTipText: colors.white,
   noticeWarningBackground: "#FF5C80",
   noticeWarningText: colors.white,
@@ -77,7 +77,7 @@ export const light = {
   toolbarInput: colors.white10,
   toolbarItem: colors.white,
 
-  tableDivider: colors.greyMid,
+  tableDivider: "#D8D2E7", // was colors.greyMid
   tableSelected: colors.primary,
   tableSelectedBackground: "#E5F7FF",
 
